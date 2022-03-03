@@ -38,10 +38,12 @@ Route::prefix('/program')->group( function(){
 
 
 //about-us.blade.php  Route Biasa
+
 Route::get('/about-us',[PraksatuController::class, 'about']);
 
 
 //contact-us.blade.php ==> Route Resource Only
+
 Route::resource('/contact-us', ContactController::class,[
     'only'=> ['index']
 ]);
