@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.baru')
 
 @section('content')
     <div class="container">
@@ -21,8 +21,7 @@
                              Kontak Kami : 
                             <li>Whatsapp - 08992653094</li>
                             <li>Telegram - 0895627515230</li>
-                            <li> </li><br><br>
-                            Kritik/Saran bisa dengan mengisi form di bawah ini
+                            diharap mengisi form kritik dan saran di bawah ini
                         
                         <div class="form-group">
                             <br><label for="name">Nama</label>
