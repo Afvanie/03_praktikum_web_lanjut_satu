@@ -15,6 +15,8 @@ use App\Http\Controllers\ContactController;
 */
 //home.blade.php -- Route Biasa
 Route::get('/',[PraksatuController::class, 'index']);
+
+
 //product.blade.php --Route Prefix
 Route::prefix('/category')->group( function(){
     Route::get('/marbel-edu-games',[PraksatuController::class, 'edu_games']);
@@ -22,22 +24,25 @@ Route::prefix('/category')->group( function(){
     Route::get('/riri-story-books',[PraksatuController::class, 'riri']);
     Route::get('/kolak-kids-songs',[PraksatuController::class, 'kolak']);
 });
-//news.blade.php -- Route Parameter
+
+//news.blade.php   Route Parameter
 Route::get('/news/{berita}',[PraksatuController::class, 'news']);
-//program.blade.php -- Route Prefix
+
+
+//program.blade.php ==> Route Prefix
 Route::prefix('/program')->group( function(){
     Route::get('/karir',[PraksatuController::class, 'karir']);
     Route::get('/magang',[PraksatuController::class, 'magang']);
     Route::get('/kunjungan-industri',[PraksatuController::class, 'kunjungan']);
 });
-//about-us.blade.php -- Route Biasa
+
+
+//about-us.blade.php  Route Biasa
 Route::get('/about-us',[PraksatuController::class, 'about']);
-//contact-us.blade.php -- Route Resource Only
+
+
+//contact-us.blade.php ==> Route Resource Only
 Route::resource('/contact-us', ContactController::class,[
     'only'=> ['index']
 ]);
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
