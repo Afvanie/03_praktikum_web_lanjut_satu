@@ -1,4 +1,4 @@
-@extends('layouts.baru')
+@extends('layouts.contact')
 
 @section('content')
     <div class="container">
@@ -19,7 +19,7 @@
                         </center><br><br>
                             Contoh Contact-Us : <br>
                              Kontak Kami : 
-                            <li>Whatsapp - 08992653094</li>
+                            <li>Whatsapp - 089926530946</li>
                             <li>Telegram - 0895627515230</li>
                             diharap mengisi form kritik dan saran di bawah ini
                         

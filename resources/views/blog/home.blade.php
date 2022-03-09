@@ -1,25 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.baru')
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <center>
-                        Login Sukses !
+            <h3> Dashboard </h3>
+                        Login Sukses !<br>
                         Selamat Datang di Website ini!
-                    </center>
-                </div>
-            </div>
         </div>
     </div>
 </div>
